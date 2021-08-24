@@ -17,4 +17,11 @@ public class FizzbuzzTest {
         String result = subject.generate(2);
         assertEquals("1, 2", result);
     }
+
+    @Test
+    void returnFizzWhenNumberIsDivisableByThree() {
+        Fizzbuzz subject = new Fizzbuzz();
+        String result = subject.convert(3);
+        assertEquals("Fizz", result);
+    }
 }
