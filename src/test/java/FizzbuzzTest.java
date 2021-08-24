@@ -24,4 +24,11 @@ public class FizzbuzzTest {
         String result = subject.convert(3);
         assertEquals("Fizz", result);
     }
+
+    @Test
+    void returnBuzzWhenNumberIsDivisableByFive() {
+        Fizzbuzz subject = new Fizzbuzz();
+        String result = subject.convert(5);
+        assertEquals("Buzz", result);
+    }
 }
